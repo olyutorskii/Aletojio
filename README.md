@@ -1,4 +1,4 @@
-* Aletojio *
+# Aletojio #
 
 [![Java CI with Maven](https://github.com/olyutorskii/Aletojio/actions/workflows/maven.yml/badge.svg)](https://github.com/olyutorskii/Aletojio/actions/workflows/maven.yml)
 [![CodeQL](https://github.com/olyutorskii/Aletojio/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/olyutorskii/Aletojio/actions/workflows/codeql-analysis.yml)
