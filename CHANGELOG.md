@@ -8,14 +8,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
-## [0.0.1] - 2022-10-01
+## [1.101.2] - 2022-10-05
 
 ### Added
 - Initial Release
 
 
-[Unreleased]: https://github.com/olyutorskii/Aletojio/compare/v0.0.1...HEAD
-[0.0.1]: https://github.com/olyutorskii/Aletojio/releases/tag/v0.0.1
+[Unreleased]: https://github.com/olyutorskii/Aletojio/compare/v1.101.2...HEAD
+[1.101.2]: https://github.com/olyutorskii/Aletojio/releases/tag/v1.101.2
 
 
 --- EOF ---
