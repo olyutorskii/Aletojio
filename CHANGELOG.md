@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Add API URL to README.md
+
+### Fixed
+- Fix CHANGELOG.md errata
+
 
 ## [1.101.2] - 2022-10-05
 
