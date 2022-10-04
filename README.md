@@ -34,6 +34,11 @@ that supports manipulation of random number and entropy.
     * Xoroshiro128**
 
 
+## API document ##
+* [API docs](https://olyutorskii.github.io/Aletojio/apidocs/index.html)
+* [Maven report](https://olyutorskii.github.io/Aletojio/)
+
+
 ## How to build ##
 
 * Aletojio needs to use [Maven 3.3.9+](https://maven.apache.org/)
