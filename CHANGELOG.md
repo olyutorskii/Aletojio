@@ -8,13 +8,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [1.101.4] - 2022-10-05
+
+### Added
+- Add API URL to README.md
+
+### Fixed
+- Fix CHANGELOG.md errata
+
+
 ## [1.101.2] - 2022-10-05
 
 ### Added
 - Initial Release
 
 
-[Unreleased]: https://github.com/olyutorskii/Aletojio/compare/v1.101.2...HEAD
+[Unreleased]: https://github.com/olyutorskii/Aletojio/compare/v1.101.4...HEAD
+[1.101.4]: https://github.com/olyutorskii/Aletojio/releases/tag/v1.101.4
 [1.101.2]: https://github.com/olyutorskii/Aletojio/releases/tag/v1.101.2
 
 

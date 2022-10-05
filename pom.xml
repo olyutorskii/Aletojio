@@ -16,7 +16,7 @@
     <groupId>io.github.olyutorskii</groupId>
     <artifactId>aletojio</artifactId>
 
-    <version>1.101.2</version>
+    <version>1.101.4</version>
 
     <packaging>jar</packaging>
     <name>Aletojio</name>
@@ -197,7 +197,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-site-plugin</artifactId>
-                    <version>3.12.0</version>
+                    <version>3.12.1</version>
                 </plugin>
 
                 <plugin>
