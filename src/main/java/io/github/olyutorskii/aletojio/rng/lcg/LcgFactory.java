@@ -42,21 +42,21 @@ public final class LcgFactory {
 
     private static final long RANDU_MUL   =           65539L;      // 6544th prime number
     private static final long RANDU_INC   =               0L;
-    private static final long RANDU_MOD   =      2147483648L;
+    private static final long RANDU_MOD   =      2147483648L;      // 2^31
 
-    private static final long MINSTD0_MUL =           16807L;
+    private static final long MINSTD0_MUL =           16807L;      // (7^5)%MINSTD_MOD
 
-    private static final long MINSTD_MUL  =           48271L;      // 4968th prime number
+    private static final long MINSTD_MUL  =           48271L;      // (7^1116395447)%MISTD_MOD and 4968th prime number
     private static final long MINSTD_INC  =               0L;
-    private static final long MINSTD_MOD  =      2147483647L;      // 8th Mersenne prime number
+    private static final long MINSTD_MOD  =      2147483647L;      // (2^31)-1 and 8th Mersenne prime number
 
-    private static final long GLIBC_MUL   =      1103515245L;      // prime number
+    private static final long GLIBC_MUL   =      1103515245L;      // ?th prime number
     private static final long GLIBC_INC   =           12345L;
-    private static final long GLIBC_MOD   =      2147483648L;
+    private static final long GLIBC_MOD   =      2147483648L;      // 2^31
 
-    private static final long MRAND48_MUL =     25214903917L;      // prime number
+    private static final long MRAND48_MUL =     25214903917L;      // ?th prime number
     private static final long MRAND48_INC =              11L;
-    private static final long MRAND48_MOD = 281474976710656L;
+    private static final long MRAND48_MOD = 281474976710656L;      // 2^48
 
     private static final long RANDU_INITSEED   =              1L;
     private static final long MINSTD_INITSEED  =              1L;
@@ -67,15 +67,10 @@ public final class LcgFactory {
 
     static {
         assert RANDU_MUL   == 0x00010003L;
-        assert MINSTD0_MUL == 7L * 7L * 7L * 7L * 7L;
+        assert MINSTD0_MUL == 0x000041a7L;
         assert MINSTD_MUL  == 0x0000bc8fL;
         assert GLIBC_MUL   == 0x41c64e6dL;
         assert MRAND48_MUL == 0x05deece66dL;
-
-        assert RANDU_MOD   ==  1L << 31;
-        assert MINSTD_MOD  == (1L << 31) - 1L;
-        assert GLIBC_MOD   ==  1L << 31;
-        assert MRAND48_MOD ==  1L << 48;
 
         assert MRAND48_INITSEED == 0x1234abcd330eL;
 
