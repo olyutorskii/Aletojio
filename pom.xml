@@ -62,7 +62,7 @@
     <modules/>
 
     <scm>
-        <connection>scm:git:git://github.com/olyutorskii/Aletojio.git</connection>
+        <connection>scm:git:https://github.com/olyutorskii/Aletojio.git</connection>
         <developerConnection>scm:git:git@github.com:olyutorskii/Aletojio.git</developerConnection>
         <url>https://github.com/olyutorskii/Aletojio</url>
     </scm>
@@ -76,9 +76,9 @@
     <distributionManagement/>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-        <!--maven.compiler.release>8</maven.compiler.release-->
+        <req.jdk>8</req.jdk>
+        <maven.compiler.source>${req.jdk}</maven.compiler.source>
+        <maven.compiler.target>${req.jdk}</maven.compiler.target>
 
         <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
         <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
@@ -224,12 +224,12 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
-                    <version>3.3.0</version>
+                    <version>3.5.0</version>
                     <dependencies>
                         <dependency>
                             <groupId>com.puppycrawl.tools</groupId>
                             <artifactId>checkstyle</artifactId>
-                            <version>10.12.4</version>
+                            <version>10.18.2</version>
                         </dependency>
                     </dependencies>
                 </plugin>
@@ -555,15 +555,8 @@
             </plugin>
 
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>checkstyle</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-maven-plugin</artifactId>
             </plugin>
 
             <plugin>
@@ -584,16 +577,47 @@
                 </reportSets>
             </plugin>
 
-            <plugin>
-                <groupId>com.github.spotbugs</groupId>
-                <artifactId>spotbugs-maven-plugin</artifactId>
-            </plugin>
-
         </plugins>
 
     </reporting>
 
     <profiles>
+
+        <!-- JDK9 or later -->
+        <profile>
+            <id>jdk9later</id>
+            <activation>
+                <jdk>[9</jdk>
+            </activation>
+            <properties>
+                <!-- -release option(javac) require JDK9+ -->
+                <maven.compiler.release>${req.jdk}</maven.compiler.release>
+            </properties>
+        </profile>
+
+        <!-- JDK11 or later -->
+        <profile>
+            <id>jdk11later</id>
+            <activation>
+                <jdk>[11</jdk>
+            </activation>
+            <reporting>
+                <plugins>
+                    <!-- Checkstyle 10.0+ require JDK11+ -->
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-checkstyle-plugin</artifactId>
+                        <reportSets>
+                            <reportSet>
+                                <reports>
+                                    <report>checkstyle</report>
+                                </reports>
+                            </reportSet>
+                        </reportSets>
+                    </plugin>
+                </plugins>
+            </reporting>
+        </profile>
 
         <profile>
             <id>release-profile</id>
@@ -623,8 +647,9 @@
                         <executions>
                             <execution>
                                 <id>attach-sources</id>
+                                <phase>package</phase>
                                 <goals>
-                                    <goal>jar-no-fork</goal>
+                                    <goal>jar</goal>
                                 </goals>
                             </execution>
                         </executions>
@@ -645,6 +670,7 @@
                         <executions>
                             <execution>
                                 <id>attach-javadocs</id>
+                                <phase>package</phase>
                                 <goals>
                                     <goal>jar</goal>
                                 </goals>
