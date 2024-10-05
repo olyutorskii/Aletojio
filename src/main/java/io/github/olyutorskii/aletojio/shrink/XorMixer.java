@@ -19,7 +19,7 @@ import java.util.Objects;
 @SuppressWarnings("serial")
 public class XorMixer implements RndInt32 {
 
-    private Collection<RndInt32> rnds;
+    private final Collection<RndInt32> rnds;
 
 
     /**

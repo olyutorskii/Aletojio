@@ -5,13 +5,14 @@ package io.github.olyutorskii.aletojio.idling;
 
 import io.github.olyutorskii.aletojio.rng.RndInt32;
 import io.github.olyutorskii.aletojio.rng.dull.SeqRepeater;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
 
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
@@ -21,20 +22,20 @@ public class PopCntMonitorTest {
     public PopCntMonitorTest() {
     }
 
-    @BeforeClass
-    public static void setUpClass() {
+    @BeforeAll
+    public static void setUpClass() throws Exception {
     }
 
-    @AfterClass
-    public static void tearDownClass() {
+    @AfterAll
+    public static void tearDownClass() throws Exception {
     }
 
-    @Before
-    public void setUp() {
+    @BeforeEach
+    public void setUp() throws Exception {
     }
 
-    @After
-    public void tearDown() {
+    @AfterEach
+    public void tearDown() throws Exception {
     }
 
     /**

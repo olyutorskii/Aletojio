@@ -3,13 +3,13 @@
 
 package io.github.olyutorskii.aletojio.emergence;
 
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
@@ -19,20 +19,20 @@ public class EfMsSeqTest {
     public EfMsSeqTest() {
     }
 
-    @BeforeClass
-    public static void setUpClass() {
+    @BeforeAll
+    public static void setUpClass() throws Exception {
     }
 
-    @AfterClass
-    public static void tearDownClass() {
+    @AfterAll
+    public static void tearDownClass() throws Exception {
     }
 
-    @Before
-    public void setUp() {
+    @BeforeEach
+    public void setUp() throws Exception {
     }
 
-    @After
-    public void tearDown() {
+    @AfterEach
+    public void tearDown() throws Exception {
     }
 
     /**
@@ -270,14 +270,17 @@ public class EfMsSeqTest {
         instance1 = new EfMsSeq();
         instance2 = new EfMsSeq();
         assertEquals(instance1.hashCode(), instance2.hashCode());
+        assertEquals(0xac32ed25, instance1.hashCode());
 
         instance1.append(0);
         instance2.append(0);
         assertEquals(instance1.hashCode(), instance2.hashCode());
+        assertEquals(0xac32ed25, instance1.hashCode());
 
         instance1.append(1, 0, 1);
         instance2.append(1, 0, 1);
         assertEquals(instance1.hashCode(), instance2.hashCode());
+        assertEquals(0xac32ece1, instance1.hashCode());
 
         int[] arr;
 

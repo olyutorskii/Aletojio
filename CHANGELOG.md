@@ -8,6 +8,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [1.101.6] - 2024-10-05
+
+### Fixed
+- Update Jacoco & SoftBugs for JDK23
+- Update Maven plugins
+- Update PMD & Checkstyle
+- Update GitHub workflows
+
+### Changed
+- Update unit tests from JUnit4 to JUnit5
+
+
 ## [1.101.4] - 2022-10-05
 
 ### Added
@@ -23,8 +35,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial Release
 
 
-[Unreleased]: https://github.com/olyutorskii/Aletojio/compare/v1.101.4...HEAD
-[1.101.4]: https://github.com/olyutorskii/Aletojio/releases/tag/v1.101.4
+[Unreleased]: https://github.com/olyutorskii/Aletojio/compare/v1.101.6...HEAD
+[1.101.6]: https://github.com/olyutorskii/Aletojio/compare/v1.101.4...v1.101.6
+[1.101.4]: https://github.com/olyutorskii/Aletojio/compare/v1.101.2...v1.101.4
 [1.101.2]: https://github.com/olyutorskii/Aletojio/releases/tag/v1.101.2
 
 
