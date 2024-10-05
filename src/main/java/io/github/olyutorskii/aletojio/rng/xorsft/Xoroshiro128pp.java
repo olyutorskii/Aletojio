@@ -38,6 +38,7 @@ public class Xoroshiro128pp implements RndInt64 {
 
     /**
      * {@inheritDoc}
+     *
      * @return {@inheritDoc}
      */
     @Override

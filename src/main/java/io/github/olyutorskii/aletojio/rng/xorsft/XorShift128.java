@@ -44,6 +44,7 @@ public class XorShift128 implements RndInt32 {
 
     /**
      * {@inheritDoc}
+     *
      * @return {@inheritDoc}
      */
     @Override

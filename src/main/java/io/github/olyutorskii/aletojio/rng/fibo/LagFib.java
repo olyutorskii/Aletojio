@@ -195,6 +195,7 @@ public class LagFib implements RndInt32 {
 
     /**
      * {@inheritDoc}
+     *
      * @return {@inheritDoc}
      */
     @Override

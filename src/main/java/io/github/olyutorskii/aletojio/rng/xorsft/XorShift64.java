@@ -36,6 +36,7 @@ public class XorShift64 implements RndInt64 {
 
     /**
      * {@inheritDoc}
+     *
      * @return {@inheritDoc}
      */
     @Override

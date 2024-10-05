@@ -46,6 +46,7 @@ public class Xoshiro256ss implements RndInt64 {
 
     /**
      * {@inheritDoc}
+     *
      * @return {@inheritDoc}
      */
     @Override

@@ -242,8 +242,8 @@ public class EfMsSeq {
         long lVal = lVal1st ^ lValLast;
 
         int result = 0;
-        result ^= lVal;
-        result ^= lVal >>> 32;
+        result ^= (int)  lVal;
+        result ^= (int) (lVal >>> 32);
 
         return result;
     }

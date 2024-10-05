@@ -270,14 +270,17 @@ public class EfMsSeqTest {
         instance1 = new EfMsSeq();
         instance2 = new EfMsSeq();
         assertEquals(instance1.hashCode(), instance2.hashCode());
+        assertEquals(0xac32ed25, instance1.hashCode());
 
         instance1.append(0);
         instance2.append(0);
         assertEquals(instance1.hashCode(), instance2.hashCode());
+        assertEquals(0xac32ed25, instance1.hashCode());
 
         instance1.append(1, 0, 1);
         instance2.append(1, 0, 1);
         assertEquals(instance1.hashCode(), instance2.hashCode());
+        assertEquals(0xac32ece1, instance1.hashCode());
 
         int[] arr;
 

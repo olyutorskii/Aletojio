@@ -93,6 +93,7 @@ public class StepSequence implements RndInt32 {
 
     /**
      * {@inheritDoc}
+     *
      * @return {@inheritDoc}
      */
     @Override

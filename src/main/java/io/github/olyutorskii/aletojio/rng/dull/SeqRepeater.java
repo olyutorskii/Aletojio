@@ -79,6 +79,7 @@ public class SeqRepeater implements RndInt32, RndInt64 {
 
     /**
      * {@inheritDoc}
+     *
      * @return {@inheritDoc}
      */
     @Override
@@ -94,6 +95,7 @@ public class SeqRepeater implements RndInt32, RndInt64 {
 
     /**
      * {@inheritDoc}
+     *
      * @return {@inheritDoc}
      */
     @Override
