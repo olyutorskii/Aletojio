@@ -26,8 +26,8 @@ import java.util.Objects;
  * LFSR has maximum long period.
  *
  * @see <a href="https://en.wikipedia.org/wiki/Linear-feedback_shift_register">
- * Linear-feedback shift register (Wikipedia)
- * </a>
+ *     Linear-feedback shift register (Wikipedia)
+ *     </a>
  */
 public class LfShiftReg implements RndInt32 {
 
@@ -66,8 +66,8 @@ public class LfShiftReg implements RndInt32 {
      * @throws NullPointerException taps is null.
      * @throws IllegalArgumentException illegal tap position
      * @see <a href="https://en.wikipedia.org/wiki/Linear-feedback_shift_register">
-     * Linear-feedback shift register (Wikipedia)
-     * </a>
+     *     Linear-feedback shift register (Wikipedia)
+     *     </a>
      */
     public LfShiftReg(int... taps)
             throws NullPointerException, IllegalArgumentException {

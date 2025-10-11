@@ -31,8 +31,8 @@ import java.util.Objects;
  * generator has more long period.
  *
  * @see <a href="https://en.wikipedia.org/wiki/Lagged_Fibonacci_generator">
- * Lagged_Fibonacci_generator (Wikipedia)
- * </a>
+ *     Lagged_Fibonacci_generator (Wikipedia)
+ *     </a>
  */
 public class LagFib implements RndInt32 {
 

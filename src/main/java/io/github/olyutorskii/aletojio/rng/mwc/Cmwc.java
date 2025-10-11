@@ -20,8 +20,8 @@ package io.github.olyutorskii.aletojio.rng.mwc;
  * "carry" comes from C(n-1).
  *
  * @see <a href="https://en.wikipedia.org/wiki/Multiply-with-carry_pseudorandom_number_generator">
- * Multiply-with-carry pseudorandom number generator (Wikipedia)
- * </a>
+ *     Multiply-with-carry pseudorandom number generator (Wikipedia)
+ *     </a>
  */
 public class Cmwc extends Mwc {
 
@@ -70,8 +70,8 @@ public class Cmwc extends Mwc {
      *
      * @throws IllegalArgumentException illegal argument
      * @see <a href="http://digitalcommons.wayne.edu/cgi/viewcontent.cgi?article=1725&context=jmasm">
-     * Random Number Generators
-     * </a>
+     *     Random Number Generators
+     *     </a>
      */
     public Cmwc() throws IllegalArgumentException {
         this(DEF_RECORDS, DEF_MULTIPLIER, DEF_DIVISOR);

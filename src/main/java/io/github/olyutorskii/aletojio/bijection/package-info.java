@@ -18,14 +18,14 @@
  * <p>These functions are useful for implementing Counter-based random number generator. (CBRNG)
  *
  * @see <a href="https://en.wikipedia.org/wiki/Confusion_and_diffusion">
- * Confusion_and_diffusion (Wikipedia)
- * </a>
+ *     Confusion_and_diffusion (Wikipedia)
+ *     </a>
  * @see <a href="https://en.wikipedia.org/wiki/Substitution%E2%80%93permutation_network">
- * Substitution-permutation network (SPN) (Wikipedia)
- * </a>
+ *     Substitution-permutation network (SPN) (Wikipedia)
+ *     </a>
  * @see <a href="https://en.wikipedia.org/wiki/Counter-based_random_number_generator_(CBRNG)">
- * Counter-based random number generator (CBRNG) (Wikipedia)
- * </a>
+ *     Counter-based random number generator (CBRNG) (Wikipedia)
+ *     </a>
  */
 
 package io.github.olyutorskii.aletojio.bijection;

@@ -22,17 +22,17 @@ import java.util.Objects;
  * we can expect a 4-bit change from the output.
  *
  * @see <a href="https://en.wikipedia.org/wiki/S-box">
- * S-box (Wikipedia)
- * </a>
+ *     S-box (Wikipedia)
+ *     </a>
  * @see <a href="https://en.wikipedia.org/wiki/Rijndael_S-box">
- * Rijndael S-box (Wikipedia)
- * </a>
+ *     Rijndael S-box (Wikipedia)
+ *     </a>
  * @see <a href="https://en.wikipedia.org/wiki/Confusion_and_diffusion">
- * Confusion_and_diffusion (Wikipedia)
- * </a>
+ *     Confusion_and_diffusion (Wikipedia)
+ *     </a>
  * @see <a href="https://en.wikipedia.org/wiki/Substitution%E2%80%93permutation_network">
- * Substitution-permutation network (SPN) (Wikipedia)
- * </a>
+ *     Substitution-permutation network (SPN) (Wikipedia)
+ *     </a>
  */
 public class Sbox8x4 implements RndInt32 {
 

@@ -22,8 +22,8 @@ import java.util.Objects;
  * "carry" comes from C(n-1).
  *
  * @see <a href="https://en.wikipedia.org/wiki/Multiply-with-carry_pseudorandom_number_generator">
- * Multiply-with-carry pseudorandom number generator (Wikipedia)
- * </a>
+ *     Multiply-with-carry pseudorandom number generator (Wikipedia)
+ *     </a>
  */
 public class Mwc implements RndInt32 {
 
@@ -127,8 +127,8 @@ public class Mwc implements RndInt32 {
      *
      * @throws IllegalArgumentException illegal argument
      * @see <a href="http://digitalcommons.wayne.edu/cgi/viewcontent.cgi?article=1725&context=jmasm">
-     * Random Number Generators
-     * </a>
+     *     Random Number Generators
+     *     </a>
      */
     public Mwc() throws IllegalArgumentException {
         this(DEF_RECORDS, DEF_MULTIPLIER);
