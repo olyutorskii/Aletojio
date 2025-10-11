@@ -29,8 +29,8 @@
  * </ul>
  *
  * @see <a href="https://en.wikipedia.org/wiki/Linear_congruential_generator">
- * Linear congruential generator (Wikipedia)
- * </a>
+ *     Linear congruential generator (Wikipedia)
+ *     </a>
  */
 
 package io.github.olyutorskii.aletojio.rng.lcg;

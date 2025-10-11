@@ -21,8 +21,8 @@ import io.github.olyutorskii.aletojio.rng.RndInt32;
  * </ul>
  *
  * @see <a href="https://en.wikipedia.org/wiki/Linear_congruential_generator">
- * Linear congruential generator (Wikipedia)
- * </a>
+ *     Linear congruential generator (Wikipedia)
+ *     </a>
  */
 public class LcgRndInt32 extends AbstractLcg implements RndInt32 {
 

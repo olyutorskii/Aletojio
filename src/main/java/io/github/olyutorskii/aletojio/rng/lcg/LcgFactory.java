@@ -35,8 +35,8 @@ package io.github.olyutorskii.aletojio.rng.lcg;
  *
  * @see java.util.Random
  * @see <a href="https://en.wikipedia.org/wiki/Linear_congruential_generator">
- * Linear congruential generator (Wikipedia)
- * </a>
+ *     Linear congruential generator (Wikipedia)
+ *     </a>
  */
 public final class LcgFactory {
 
@@ -115,8 +115,8 @@ public final class LcgFactory {
      *
      * @return random number generator
      * @see <a href="https://en.wikipedia.org/wiki/Lehmer_random_number_generator">
-     * Lehmer random number generator (Wikipedia)
-     * </a>
+     *     Lehmer random number generator (Wikipedia)
+     *     </a>
      */
     public static LcgRndInt31 createMinStd0() {
         LcgRndInt31 result;
@@ -136,8 +136,8 @@ public final class LcgFactory {
      *
      * @return random number generator
      * @see <a href="https://en.wikipedia.org/wiki/Lehmer_random_number_generator">
-     * Lehmer random number generator (Wikipedia)
-     * </a>
+     *     Lehmer random number generator (Wikipedia)
+     *     </a>
      */
     public static LcgRndInt31 createMinStd() {
         LcgRndInt31 result;

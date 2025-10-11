@@ -25,9 +25,9 @@ import java.util.Objects;
  * <p>Random number output throughput decreases half.
  *
  * @see <a href="https://en.wikipedia.org/wiki/Bernoulli_process#Basic_von_Neumann_extractor">
- * Basic von Neumann extractor (Wikipedia)</a>
+ *     Basic von Neumann extractor (Wikipedia)</a>
  * @see <a href="https://en.wikipedia.org/wiki/Self-shrinking_generator">
- * Self-shrinking generator (Wikipedia)</a>
+ *     Self-shrinking generator (Wikipedia)</a>
  */
 @SuppressWarnings("serial")
 public class VnExtractor implements RndInt32 {

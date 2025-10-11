@@ -20,8 +20,8 @@ import java.util.Arrays;
  * <p>TODO: use suffix tree.
  *
  * @see <a href="https://en.wikipedia.org/wiki/Ehrenfeucht%E2%80%93Mycielski_sequence">
- * Ehrenfeucht Mycielski sequence.
- * </a>
+ *     Ehrenfeucht Mycielski sequence.
+ *     </a>
  * @see <a href="https://oeis.org/A038219">A038219 sample list</a>
  */
 public class EfMsSeq {

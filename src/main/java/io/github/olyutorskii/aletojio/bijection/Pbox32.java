@@ -15,14 +15,14 @@ import java.util.Objects;
  * <p>Takes a 32-bit integer as input and outputs a diffused 32-bit integer.
  *
  * @see <a href="https://en.wikipedia.org/wiki/Permutation_box">
- * Permutation box (Wikipedia)
- * </a>
+ *     Permutation box (Wikipedia)
+ *     </a>
  * @see <a href="https://en.wikipedia.org/wiki/Confusion_and_diffusion">
- * Confusion_and_diffusion (Wikipedia)
- * </a>
+ *     Confusion_and_diffusion (Wikipedia)
+ *     </a>
  * @see <a href="https://en.wikipedia.org/wiki/Substitution%E2%80%93permutation_network">
- * Substitution-permutation network (SPN) (Wikipedia)
- * </a>
+ *     Substitution-permutation network (SPN) (Wikipedia)
+ *     </a>
  */
 public class Pbox32 implements RndInt32 {
 

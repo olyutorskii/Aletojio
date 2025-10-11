@@ -20,8 +20,8 @@ import io.github.olyutorskii.aletojio.rng.RndInt32;
  * <p>{@link Integer#MAX_VALUE} is followed by {@link Integer#MIN_VALUE}.
  *
  * @see <a href="https://en.wikipedia.org/wiki/Low-discrepancy_sequence">
- * Low-discrepancy sequence (Wikipedia)
- * </a>
+ *     Low-discrepancy sequence (Wikipedia)
+ *     </a>
  */
 public class StepSequence implements RndInt32 {
 
@@ -35,8 +35,8 @@ public class StepSequence implements RndInt32 {
      *
      * @see <a href="https://en.wikipedia.org/wiki/Golden_ratio">Golden ratio (Wikipedia)</a>
      * @see <a href="https://en.wikipedia.org/wiki/Low-discrepancy_sequence">
-     * Low-discrepancy sequence (Wikipedia)
-     * </a>
+     *     Low-discrepancy sequence (Wikipedia)
+     *     </a>
      */
     public static final int PRIME_STEP = 1642716433;
 
@@ -82,8 +82,8 @@ public class StepSequence implements RndInt32 {
      *
      * @return random generator
      * @see <a href="https://en.wikipedia.org/wiki/Low-discrepancy_sequence">
-     * Low-discrepancy sequence (Wikipedia)
-     * </a>
+     *     Low-discrepancy sequence (Wikipedia)
+     *     </a>
      */
     public static StepSequence createQuasiRandom() {
         StepSequence result = new StepSequence(PRIME_STEP, PRIME_STEP);

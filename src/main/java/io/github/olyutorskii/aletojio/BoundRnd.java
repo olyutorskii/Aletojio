@@ -20,8 +20,8 @@ import java.util.Objects;
  *
  * @see <a href="https://arxiv.org/abs/1805.10941">Fast Random Integer Generation in an Interval (arXiv)</a>
  * @see <a href="https://lemire.me/blog/2019/06/06/nearly-divisionless-random-integer-generation-on-various-systems/">
- * Nearly Divisionless Random Integer Generation On Various Systems
- * </a>
+ *     Nearly Divisionless Random Integer Generation On Various Systems
+ *     </a>
  */
 public class BoundRnd {
 
